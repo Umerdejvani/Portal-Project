@@ -1,0 +1,263 @@
+﻿@model IEnumerable<Portal_Project.Models.RoundOne>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.canidateName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fatherName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddressLine1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddressLine2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneOne)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneSec)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CNIC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PositionAF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DesiredSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartEmpDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OldEmp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HSCEdu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSCEdu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BSEdu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MSEdu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Skills)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qualification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentEmp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CE_Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CE_Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CE_Reason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CE_StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CE_MayContact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastEmp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LE_Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LE_Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LE_Reason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LE_StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LE_EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SecondLastEmp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SLE_Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SLE_Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SLE_Reason)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SLE_StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SLE_EndDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.canidateName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fatherName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressLine1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressLine2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneOne)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneSec)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CNIC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PositionAF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesiredSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartEmpDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OldEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HSCEdu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FSCEdu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BSEdu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MSEdu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Skills)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qualification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE_Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE_Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE_Reason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE_StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CE_MayContact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE_Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE_Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE_Reason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE_StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LE_EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SecondLastEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLE_Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLE_Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLE_Reason)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLE_StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SLE_EndDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

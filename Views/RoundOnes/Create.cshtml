@@ -1,0 +1,296 @@
+﻿@model Portal_Project.Models.RoundOne
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+
+<h1 style="text-align:center">ROUND ONE</h1>
+
+
+
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-row">
+
+                <div class="p-3 mb-2 bg-dark text-white col-md-12">Enter Personal Details</div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="canidateName" class="control-label">First Name</label>
+                    <input asp-for="canidateName" class="form-control" />
+                    <span asp-validation-for="canidateName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="fatherName" class="control-label">Last Name</label>
+                    <input asp-for="fatherName" class="form-control" />
+                    <span asp-validation-for="fatherName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="PhoneOne" class="control-label">Enter Phone #</label>
+                    <input asp-for="PhoneOne" class="form-control" />
+                    <span asp-validation-for="PhoneOne" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="PhoneSec" class="control-label">Enter Secondary Phone #</label>
+                    <input asp-for="PhoneSec" class="form-control" />
+                    <span asp-validation-for="PhoneSec" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label asp-for="Email" class="control-label">Enter Email</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="City" class="control-label">City</label>
+                    <select asp-for="City" class="form-select form-control">
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                    </select>
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+
+
+                <div class="col-md-4 form-group">
+                    <label asp-for="DateOfBirth" class="control-label">Date Of Birth</label>
+                    <input asp-for="DateOfBirth" class="form-control" />
+                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                </div>
+                <div class="col-md-2 form-group">
+                    <label asp-for="Age" class="control-label">Enter Your Age</label>
+                    <input asp-for="Age" class="form-control" />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="CNIC" class="control-label">Enter your CNIC (National Identity Number)</label>
+                    <input asp-for="CNIC" class="form-control" />
+                    <span asp-validation-for="CNIC" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-12">
+                    <label asp-for="AddressLine1" class="control-label">Enter Address</label>
+                    <input asp-for="AddressLine1" class="form-control" />
+                    <span asp-validation-for="AddressLine1" class="text-danger"></span>
+                </div>
+
+                <div class="p-3 mb-2 bg-dark text-white col-md-12">Employment Desired:</div>
+
+
+                <div class="col-md-3 form-group">
+                    <label asp-for="PositionAF" class="control-label">Applied for Position</label>
+                    <input asp-for="PositionAF" class="form-control" />
+                    <span asp-validation-for="PositionAF" class="text-danger"></span>
+                </div>
+                <div class="col-md-3 form-group">
+                    <label asp-for="DesiredSalary" class="control-label">Enter Desired Salary</label>
+                    <input asp-for="DesiredSalary" class="form-control" />
+                    <span asp-validation-for="DesiredSalary" class="text-danger"></span>
+                </div>
+                <div class=" col-md-6 form-group">
+                    <label asp-for="StartEmpDate" class="control-label">Date you can start</label>
+                    <input asp-for="StartEmpDate" class="form-control" />
+                    <span asp-validation-for="StartEmpDate" class="text-danger"></span>
+                </div>
+
+
+                <div class="p-3 mb-2 bg-dark text-white col-md-12">Education:</div>
+
+                @*Matric Qualification*@
+
+                <div class="col-md-1 form-group">
+                    <label class="control-label">Select</label>
+                    <select class="form-select form-control">
+                        <option>SSC</option>
+                        <option>FSC</option>
+                        <option>Other</option>
+                    </select>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="HSCEdu" class="control-label">Please Enter your matriculation Degree</label>
+                    <input asp-for="HSCEdu" class="form-control" />
+                    <span asp-validation-for="HSCEdu" class="text-danger"></span>
+                </div>
+                <div class="col-md-5 form-group">
+                    <label class="control-label">Years Of Number Attended</label>
+                    <input class="form-control" />
+                </div>
+
+                <hr class="hr" />
+
+                @*Inter Qualification*@
+                <div class="col-md-1 form-group">
+                    <label class="control-label">Select</label>
+                    <select class="form-select form-control">
+                        <option>BISE</option>
+                        <option>FISE</option>
+                        <option>Diploma</option>
+                    </select>
+                    <span class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="FSCEdu" class="control-label">Please Enter your Intermediate Degree</label>
+                    <input asp-for="FSCEdu" class="form-control" />
+                    <span asp-validation-for="FSCEdu" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-5 form-group">
+                    <label class="control-label">Years Of Number Attended</label>
+                    <input class="form-control" />
+                </div>
+
+                @*Bacholers Qualification*@
+
+                <div class="col-md-1 form-group">
+                    <label class="control-label">Select</label>
+                    <select class="form-select form-control">
+                        <option>BS</option>
+                        <option>BSC</option>
+                        <option>Diploma</option>
+                    </select>
+                    <span class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label asp-for="BSEdu" class="control-label">Please Enter your Bacholers Degree</label>
+                    <input asp-for="BSEdu" class="form-control" />
+                    <span asp-validation-for="BSEdu" class="text-danger"></span>
+                </div>
+                <div class="col-md-5 form-group">
+                    <label class="control-label">Years Of Number Attended</label>
+                    <input class="form-control" />
+                </div>
+
+                @*Masters Qualification*@
+                <div class="col-md-1 form-group">
+                    <label class="control-label">Select</label>
+                    <select class="form-select form-control">
+                        <option>BS</option>
+                        <option>BSC</option>
+                        <option>Diploma</option>
+                    </select>
+                    <span class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label asp-for="MSEdu" class="control-label">Please Enter your Masters Degree</label>
+                    <input asp-for="MSEdu" class="form-control" />
+                    <span asp-validation-for="MSEdu" class="text-danger"></span>
+                </div>
+                <div class="col-md-5 form-group">
+                    <label class="control-label">Years Of Number Attended</label>
+                    <input class="form-control" />
+                </div>
+
+
+
+
+                @*Skills/Qualifications:*@
+
+
+                <div class="p-3 mb-2 bg-dark text-white col-md-12">Skills/Qualifications:</div>
+                <div class="form-group col-md-12">
+                    <label asp-for="Skills" class="control-label">Skills</label>
+                    <textarea asp-for="Skills" class="form-control"></textarea>
+                    <span asp-validation-for="Skills" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-12">
+                    <label asp-for="Qualification" class="control-label"></label>
+                    <textarea asp-for="Qualification" class="form-control"></textarea>
+                    <span asp-validation-for="Qualification" class="text-danger"></span>
+                </div>
+
+
+
+                @*Current Employement:*@
+
+                <div class="p-3 mb-2 bg-dark text-white col-md-12">Current Employment:</div>
+
+
+                <div class="form-group col-md-6">
+                    <label asp-for="CurrentEmp" class="control-label">Current Employer</label>
+                    <input asp-for="CurrentEmp" class="form-control" placeholder="Name of Current Employer or NONE if not Employed" />
+                    <span asp-validation-for="CurrentEmp" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="CE_Position" class="control-label">Position</label>
+                    <input asp-for="CE_Position" class="form-control" />
+                    <span asp-validation-for="CE_Position" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="CE_Salary" class="control-label">Current Salary</label>
+                    <input asp-for="CE_Salary" class="form-control" />
+                    <span asp-validation-for="CE_Salary" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="CE_Reason" class="control-label">Reason for leaving?</label>
+                    <input asp-for="CE_Reason" class="form-control" />
+                    <span asp-validation-for="CE_Reason" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label asp-for="CE_StartDate" class="control-label">Start Date of Employement</label>
+                    <input asp-for="CE_StartDate" class="form-control" />
+                    <span asp-validation-for="CE_StartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check col-md-3">
+                    <label class="form-check-label"></label>
+                    <input class="form-check-input" asp-for="CE_MayContact" placeholder="Yes" />
+                    <input class="form-check-input" asp-for="CE_MayContact" placeholder="No" />
+
+                </div>
+
+
+
+
+                @*Last Employement:*@
+
+                <div class="p-3 mb-2 bg-dark text-white col-md-12">Current Employment:</div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="LastEmp" class="control-label">Previous Employer</label>
+                    <input asp-for="LastEmp" class="form-control" placeholder="Name of Previous Employer" />
+                    <span asp-validation-for="LastEmp" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="LE_Position" class="control-label">Previous Position</label>
+                    <input asp-for="LE_Position" class="form-control" />
+                    <span asp-validation-for="LE_Position" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-3">
+                    <label asp-for="LE_Salary" class="control-label">Last Salary</label>
+                    <input asp-for="LE_Salary" class="form-control" />
+                    <span asp-validation-for="LE_Salary" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="LE_Reason" class="control-label">Reason for Leaving?</label>
+                    <input asp-for="LE_Reason" class="form-control" />
+                    <span asp-validation-for="LE_Reason" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label asp-for="LE_StartDate" class="control-label">Emplyment Start Date</label>
+                    <input asp-for="LE_StartDate" class="form-control" />
+                    <span asp-validation-for="LE_StartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-4">
+                    <label asp-for="LE_EndDate" class="control-label">Emplyment End Date</label>
+                    <input asp-for="LE_EndDate" class="form-control" />
+                    <span asp-validation-for="LE_EndDate" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-10"></div>
+                <div class="form-group col-md-2">
+                    <input type="submit" value="Finish Round" class="btn btn-dark" />
+                </div>
+</form>
+    </div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
